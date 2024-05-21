@@ -1,7 +1,7 @@
 /* purposefully putting wait function 
 after submitting the expense. 
 Not to be used in read Full-stack application*/
-export const makeItWait = () => new Promise (res => setTimeout(res,Math.random()*800));
+export const makeItWait = () => new Promise (res => setTimeout(res,Math.random()*500));
 
 const generateRamdomColor = () => {
     const existingExpenseLength = fetchData("expenses")?.length?? 0;
